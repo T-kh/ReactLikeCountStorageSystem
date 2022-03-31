@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Component Practice</title>
+</head>
+<body>
+  
+  <div class="container" id="app">
+    <h1>Total Evaluations: {{total}} </h1>
+    <like-component text="Like" @increment="incrementTotal" id="like-1"></like-component>
+    <like-component text="Great" @increment="incrementTotal" id="like-2"></like-component>
+    <like-component text="Super" @increment="incrementTotal" id="like-3"></like-component>
+    <like-component @increment="incrementTotal" id="like-4"></like-component>
+
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
